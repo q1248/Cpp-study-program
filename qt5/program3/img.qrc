@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/pic"/>
+    <qresource prefix="/">
+        <file>../../../Downloads/新建.png</file>
+        <file>../../../Downloads/粘贴.png</file>
+        <file>../../../Downloads/剪切.png</file>
+        <file>../../../Downloads/复制.png</file>
+        <file>../../../Downloads/清空.png</file>
+        <file>../../../Downloads/打开.png</file>
+        <file>../../../Downloads/下划线.png</file>
+        <file>../../../Downloads/斜体.png</file>
+        <file>../../../Downloads/加粗.png</file>
+        <file>../../../Downloads/退出.png</file>
+        <file>../../../Downloads/icon.png</file>
+    </qresource>
+</RCC>
