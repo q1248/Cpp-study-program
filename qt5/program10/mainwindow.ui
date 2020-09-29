@@ -43,7 +43,7 @@
        <rect>
         <x>30</x>
         <y>20</y>
-        <width>121</width>
+        <width>125</width>
         <height>191</height>
        </rect>
       </property>
@@ -53,29 +53,39 @@
          <property name="orientation">
           <enum>Qt::Vertical</enum>
          </property>
-         <widget class="QToolButton" name="toolButton_5">
+         <widget class="QToolButton" name="toolButton_1">
           <property name="text">
-           <string>删除项</string>
+           <string>初始化列表</string>
+          </property>
+          <property name="toolButtonStyle">
+           <enum>Qt::ToolButtonTextBesideIcon</enum>
           </property>
          </widget>
          <widget class="QToolButton" name="toolButton_2">
           <property name="text">
            <string>清除列表</string>
           </property>
-         </widget>
-         <widget class="QToolButton" name="toolButton">
-          <property name="text">
-           <string>列表初始化</string>
+          <property name="toolButtonStyle">
+           <enum>Qt::ToolButtonTextBesideIcon</enum>
           </property>
          </widget>
          <widget class="QToolButton" name="toolButton_3">
           <property name="text">
-           <string>插入项</string>
+           <string>插入item</string>
+          </property>
+          <property name="toolButtonStyle">
+           <enum>Qt::ToolButtonTextBesideIcon</enum>
           </property>
          </widget>
          <widget class="QToolButton" name="toolButton_4">
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
           <property name="text">
-           <string>添加项</string>
+           <string>删除item</string>
+          </property>
+          <property name="toolButtonStyle">
+           <enum>Qt::ToolButtonTextBesideIcon</enum>
           </property>
          </widget>
         </widget>
@@ -129,48 +139,54 @@
      <widget class="QListWidget" name="listWidget">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>240</y>
-        <width>256</width>
+        <x>40</x>
+        <y>200</y>
+        <width>431</width>
         <height>192</height>
        </rect>
       </property>
-     </widget>
-     <widget class="QLabel" name="label">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>60</y>
-        <width>78</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>TextLabel</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="lineEdit">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>60</y>
-        <width>113</width>
-        <height>31</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="radioButton">
-      <property name="geometry">
-       <rect>
-        <x>360</x>
-        <y>70</y>
-        <width>127</width>
-        <height>29</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>RadioButton</string>
-      </property>
+      <item>
+       <property name="text">
+        <string>新建项目1</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="checkState">
+        <enum>Checked</enum>
+       </property>
+       <property name="flags">
+        <set>ItemIsEditable|ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>新建项目2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>新建项目3</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="NoBrush">
+         <color alpha="255">
+          <red>15</red>
+          <green>41</green>
+          <blue>44</blue>
+         </color>
+        </brush>
+       </property>
+      </item>
      </widget>
      <widget class="QSplitter" name="splitter_2">
       <property name="geometry">
@@ -186,24 +202,63 @@
       </property>
       <widget class="QToolButton" name="toolButton_6">
        <property name="text">
-        <string>选择项目</string>
+        <string>项选择</string>
        </property>
       </widget>
-      <widget class="QToolButton" name="toolButton_7">
+      <widget class="QToolButton" name="toolButton_11">
        <property name="text">
         <string>选择所有项目</string>
        </property>
       </widget>
       <widget class="QToolButton" name="toolButton_8">
        <property name="text">
-        <string/>
+        <string>全不选</string>
        </property>
       </widget>
       <widget class="QToolButton" name="toolButton_9">
        <property name="text">
-        <string>...</string>
+        <string>反向选择</string>
        </property>
       </widget>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>60</y>
+        <width>301</width>
+        <height>33</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>当前项</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButton">
+         <property name="text">
+          <string>可编辑</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </widget>
     </widget>
     <widget class="QWidget" name="tab_3">
@@ -238,8 +293,96 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
+   <addaction name="init_list"/>
+   <addaction name="clean_list"/>
+   <addaction name="add_item"/>
+   <addaction name="delete_item"/>
+   <addaction name="exit"/>
+   <addaction name="separator"/>
   </widget>
+  <action name="init_list">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/img/init.png</normaloff>:/img/init.png</iconset>
+   </property>
+   <property name="text">
+    <string>初始化列表</string>
+   </property>
+   <property name="priority">
+    <enum>QAction::NormalPriority</enum>
+   </property>
+  </action>
+  <action name="clean_list">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/img/清除.png</normaloff>:/img/清除.png</iconset>
+   </property>
+   <property name="text">
+    <string>清除列表</string>
+   </property>
+  </action>
+  <action name="add_item">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/img/插入.png</normaloff>:/img/插入.png</iconset>
+   </property>
+   <property name="text">
+    <string>插入item(项)</string>
+   </property>
+  </action>
+  <action name="delete_item">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/img/Downloads/删除项目.png</normaloff>:/img/Downloads/删除项目.png</iconset>
+   </property>
+   <property name="text">
+    <string>删除item(项)</string>
+   </property>
+  </action>
+  <action name="select_all">
+   <property name="text">
+    <string>全选</string>
+   </property>
+  </action>
+  <action name="clean_select">
+   <property name="text">
+    <string>全不选</string>
+   </property>
+  </action>
+  <action name="select_un">
+   <property name="text">
+    <string>反选</string>
+   </property>
+  </action>
+  <action name="exit">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/img/退出 .png</normaloff>:/img/退出 .png</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
  </widget>
- <resources/>
- <connections/>
+ <resources>
+  <include location="src.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>exit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>430</x>
+     <y>255</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
