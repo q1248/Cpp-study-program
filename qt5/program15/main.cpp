@@ -1,5 +1,4 @@
-//这个项目是关于TreedWidgets
-//显示图片不出来,以后慢慢琢磨了
+//这是关于数据模型那个表格的
 #include "mainwindow.h"
 #include <QApplication>
 

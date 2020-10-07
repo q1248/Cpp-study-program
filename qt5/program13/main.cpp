@@ -1,6 +1,6 @@
-//这个项目是关于TreedWidgets
-//显示图片不出来,以后慢慢琢磨了
+//这是关于文件系统模型的,和treeview关系的特别紧密
 #include "mainwindow.h"
+
 #include <QApplication>
 
 int main(int argc, char *argv[])

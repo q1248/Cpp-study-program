@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/pic">
+        <file>open.png</file>
+        <file>blod.png</file>
+        <file>右对齐.png</file>
+        <file>左对齐.png</file>
+        <file>居中.png</file>
+        <file>删除行.png</file>
+        <file>添加行.png</file>
+        <file>插入行.png</file>
+        <file>展示.png</file>
+        <file>另存为.png</file>
+    </qresource>
+</RCC>

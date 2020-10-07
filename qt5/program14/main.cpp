@@ -1,5 +1,4 @@
-//这个项目是关于TreedWidgets
-//显示图片不出来,以后慢慢琢磨了
+//这个项目是关于QListModel的,实现了个列表的展示
 #include "mainwindow.h"
 #include <QApplication>
 
