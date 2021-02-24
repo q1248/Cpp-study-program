@@ -1,2 +1,4 @@
 # Cpp-study-program
-c++学习中的一些记录
+All have already been writen in cpp_note.pdf
+That's some note about cpp
+
