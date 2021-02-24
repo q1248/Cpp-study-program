@@ -1,3 +1,0 @@
-﻿  main.cpp
-d:\c++study\cpp-study-program\面向对象\面向对象\main.cpp(18): error C2440: “初始化”: 无法从“initializer list”转换为“df”
-  d:\c++study\cpp-study-program\面向对象\面向对象\main.cpp(18): note: 初始值设定项包含过多元素
